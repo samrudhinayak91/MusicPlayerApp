@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.samrudhinayak.audioserver">
+
+    <uses-sdk
+        android:minSdkVersion="13"
+        android:targetSdkVersion="21" />
+
+    <permission android:name="com.example.samrudhinayak.audioserver.GEN_ID" >
+    </permission>
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher">
+        <service
+            android:label="ServiceIDClient"
+            android:name=".ServiceProviderActivity"
+            android:exported="true"
+            android:permission="com.example.samrudhinayak.audioserver.GEN_ID" >
+            <intent-filter>
+                <action android:name="CommonPackage" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

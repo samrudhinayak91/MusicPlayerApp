@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/Date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minLines="1"
+        android:paddingTop="5dp"
+        android:text="Date"
+        android:layout_alignParentStart="true"
+        android:textSize="35px"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/activity_action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minLines="1"
+        android:paddingTop="5dp"
+        android:text="Action"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Date"
+        android:layout_alignEnd="@+id/Date"
+        android:textSize="35px"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/Clip_Number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minLines="1"
+        android:paddingTop="5dp"
+        android:text="Clip Number"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/activity_action"
+        android:layout_alignEnd="@+id/activity_action"
+        android:textSize="35px"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:id="@+id/desc"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Clip_Number"
+        android:layout_alignEnd="@+id/Clip_Number"
+        android:textSize="35px"
+        android:textColor="#000000" />
+</RelativeLayout>
